@@ -9,7 +9,7 @@ function getData(){
 		let str = "";
 		for(let i = 0; i < data.length;i++){
 			const news = data[i];
-			
+
 			let addStr="";
 				for(let j = 0 ; j < news.附加檔案.length;j++){
 					const dataNews = news.附加檔案[j];
@@ -21,9 +21,7 @@ function getData(){
 					<li>${dataNews.連結位置}</li>
 					</ul>`
 					addStr += addContent;
-					
 				}
-			
 			let content =`
 			<tr>
 				<td>${news.標題}</td>
@@ -35,7 +33,6 @@ function getData(){
 				</tr>`;
 			str+=content;
 			list.innerHTML=str;
-		
 		}
 	}
 	);
